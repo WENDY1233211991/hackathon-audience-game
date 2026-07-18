@@ -5,8 +5,8 @@ import { defineConfig } from "vite";
 const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === "seatbelt";
 
 const localBindingConfig = {
+  name: "hackathon-audience-game",
   main: "./worker/index.ts",
-  compatibility_flags: ["nodejs_compat"],
 };
 
 export default defineConfig(async () => {
